@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar a {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #22c55e;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #22c55e;
+}
+
+/* SECTIONS */
+.section {
+  min-height: 100vh;
+  padding: 120px 10%;
+  text-align: center;
+}
+
+.home a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   width: 200px;
+   /* height: 400px; */
+   margin: auto;
+   padding: 20px;
+}
+
+.home span {
+  color: #38bdf8;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: none;
+  background: linear-gradient(135deg, #38bdf8, #22c55e);
+  color: #0f172a;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #38bdf8;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+  padding: 30px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 20px #38bdf8;
+}
+
+/* GLASS EFFECT */
+.glass {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(10px);
+}
+
+/* FORM */
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* ANIMATIONS */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s forwards;
+}
+
+.delay { animation-delay: 0.5s; }
+.delay2 { animation-delay: 1s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card a{
+    color: #FFFFFF;
+}
+.logo strong{
+    color: blue;
+}
