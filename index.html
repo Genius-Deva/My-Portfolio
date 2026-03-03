@@ -6,6 +6,8 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<div class="cursor"></div>
+<audio id="hoverSound" src="assets/hover.mp3"></audio>
 <body>
 
 <!-- NAVBAR -->
@@ -68,7 +70,7 @@ from others. Let's collaborate, inspire, and grow together!
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section glass">
+<!-- <section id="contact" class="section glass">
   <h2 class="title">Contact Me</h2>
   <form>
     <input type="text" placeholder="Your Name" required>
@@ -76,7 +78,43 @@ from others. Let's collaborate, inspire, and grow together!
     <textarea placeholder="Your Message"></textarea>
     <button class="btn">Send</button>
   </form>
+</section> -->
+<!-- <section id="contact" class="section glass">
+  <h2 class="title">Contact Me</h2>
+
+  <form action="https://formsubmit.co/ahmadolanrewaju01@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+  </form>
+</section> -->
+<section id="contact" class="section glass reveal">
+  <h2 class="title">Contact Me</h2>
+
+  <form id="contactForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit" class="btn sendBtn">
+      <span class="btnText">Send Message</span>
+      <span class="loader"></span>
+    </button>
+  </form>
+
+  <div class="successMessage">
+    ✅ Message Sent Successfully!
+  </div>
 </section>
+
+<audio id="sendSound" src="assets/send.mp3"></audio>
+<canvas id="particles"></canvas>
+<section class="section reveal"></section>
 
 <script src="script.js"></script>
 </body>
